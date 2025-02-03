@@ -281,7 +281,7 @@ p {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-     <style>
+    style
         html {
             scroll-behavior: smooth;
         }
@@ -303,6 +303,10 @@ p {
             height: 100vh;
             padding: 50px;
         }
+        #targetSection {
+            background-color: #f0f0f0;
+        }
+    
         #targetSection {
             background-color: #f0f0f0;
         }
