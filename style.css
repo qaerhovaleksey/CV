@@ -1,0 +1,309 @@
+/* Базовые стили и сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('image/image_1.gif') no-repeat center center fixed;
+    background-size: cover ;
+    scroll-behavior: smooth;
+}
+
+/* Навигационное меню */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    z-index: 1000;
+}
+#about {
+    width: 80%; /* Устанавливает ширину блока как 80% от родительского элемента */
+    max-width: 1200px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирует блок горизонтально */
+    padding: 20px; /* Внутренние отступы для удобства */
+    background-color: transparent; /* Фоновый цвет блока сделан прозрачным */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Стили секций */
+section {
+    min-height: 100vh;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: rgba(0, 0, 0, 0.5) blur(10px);
+    position: relative;
+}
+
+#home {
+    /* Дополнительные стили для главной */
+    text-align: center;
+    background-color: transparent; /* Фоновый цвет блока сделан прозрачным */
+}
+
+#about, #skills, #contact {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 2700px;
+
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Аватар */
+.avatar {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 25%;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.8); /* Дополнительно насыщенный синий */
+}
+.avatar {
+    width: 300px; /* Ширина аватара */
+    height: 300px; /* Высота аватара */
+    border-radius: 50%; /* Делает аватар круглым */
+}
+
+/* Навыки */
+.skills-list li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    color: #103247;
+}
+
+
+.skills-list li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+/* Социальные сети */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    gap : 20xp
+}
+
+.social-links a:hover {
+    color: #1abc9c;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+#about {
+    width: 80%; /* Устанавливает ширину блока как 80% от родительского элемента */
+    max-width: 1200px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирует блок горизонтально */
+    padding: 20px; /* Внутренние отступы для удобства */
+    background-color: transparent; /* Фоновый цвет блока сделан прозрачным */
+}
+#skills {
+    width: 80%; /* Устанавливает ширину блока как 80% от родительского элемента */
+    max-width: 1200px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирует блок горизонтально */
+    padding: 20px; /* Внутренние отступы для удобства */
+    background-color: transparent; /* Фоновый цвет блока сделан прозрачным */
+}
+#contact{
+    width: 80%; /* Устанавливает ширину блока как 80% от родительского элемента */
+    max-width: 1200px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирует блок горизонтально */
+    padding: 20px; /* Внутренние отступы для удобства */
+    background-color: transparent; /* Фоновый цвет блока сделан прозрачным */
+}
+
+
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.socials a {
+    padding: 50px;
+}
+
+
+.socials a img {
+    width: 50px;
+    height: 50px;
+/*    filter: grayscale(1) brightness(1.2) sepia(0.5) hue-rotate(-20deg) saturate(1.5);*/
+}
+
+.socials div {
+  display: flex;
+/*  flex-direction: column;*/
+  align-items: center;
+  text-align: center;
+}
+/* Неоновый синий стиль */
+.section h2, h1 {
+    color: #FFFFFF; /* Белый цвет текста */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: 'Arial', sans-serif; /* Выберите подходящий шрифт */
+}
+
+.section p {
+    color: #FFFFFF; /* Белый цвет текста */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: 'Arial', sans-serif;
+}
+
+#skills {
+    color: #103247; /* Неоново-синий цвет текста */
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #00ffff;
+    font-family: 'Arial', sans-serif; /* Выберите подходящий шрифт */
+}
+/* Стили для секции навыков с полностью прозрачным фоном */
+#skills {
+    padding: 50px;
+    background-color: transparent; /* Полностью прозрачный фон */
+}
+
+
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #555;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #scrollButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section {
+            height: 100vh;
+            padding: 50px;
+        }
+        #targetSection {
+            background-color: #f0f0f0;
+        }
+    </style>
