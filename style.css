@@ -80,6 +80,13 @@ section {
 h1, h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
+    color:#FFFFFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: 'Arial', sans-serif;
 }
 
 p {
